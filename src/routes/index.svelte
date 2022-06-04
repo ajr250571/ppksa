@@ -1,8 +1,12 @@
 <script lang="ts">
-	import { numero } from '../stores/config';
+	import { numero, hora } from '../stores/config';
+
+	/*	
 	const incNumero = () => {
 		$numero += 1;
 	};
+	*/
+
 </script>
 
 <svelte:head>
@@ -42,6 +46,8 @@
 	<button class="btn btn-link">Link</button>
 	<button class="btn btn-success">Success</button>
 	<button class="btn btn-warning">Warning</button>
-	<button class="btn btn-error">Error</button>
-	<button on:click={incNumero} class="btn btn-info">Info {$numero}</button>
+	<button on:click={numero.resetNumero} class="btn btn-error">Reset</button>
+	<button on:click={numero.addNumero} class="btn btn-info">Add</button>
 </div>
+<p class="row mt-12 text-center text-emerald-700 text-2xl font-bold">{$numero}</p>
+<p class="row mt-12 text-center">{$hora}</p>
