@@ -1,7 +1,6 @@
 <script lang="ts">
 	import tema from '../stores/tema';
 	export let temaId: string;
-	
 
 	let temas = [
 		{ id: 'light', name: 'Claro' },
@@ -17,13 +16,13 @@
 		{ link: '/clases', text: 'Clases' },
 		{ link: '/matrices', text: 'Matrices' },
 		{ link: '/tuplas', text: 'Tuplas' },
-		{ link: '/tipoobjetos', text: 'Tipo Objetos' }
+		{ link: '/tipoobjetos', text: 'Tipo Objetos' },
+		{ link: '/async-await', text: 'Async / Await' }
 	];
 
 	const cambiarTema = (nuevoTemaId: string, nuevoTemaName: string) => {
 		temaId = nuevoTemaId;
 		$tema = temaId;
-		
 	};
 </script>
 

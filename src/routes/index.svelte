@@ -2,12 +2,6 @@
 	import { numero, hora } from '../stores/config';
 	
 
-	/*	
-	const incNumero = () => {
-		$numero += 1;
-	};
-	*/
-	
 </script>
 
 <svelte:head>
