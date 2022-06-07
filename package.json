@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"daisyui": "^2.15.2",
+		"firebase": "^9.8.2",
 		"theme-change": "^2.0.2"
 	}
 }

@@ -46,3 +46,9 @@
 </div>
 <p class="row mt-12 text-center text-emerald-700 text-2xl font-bold">{$numero}</p>
 <p class="row mt-12 text-center">{$hora}</p>
+
+<style>
+	button {
+		@apply my-2;
+	}
+</style>

@@ -11,7 +11,7 @@
 	}
 </script>
 
-<h1>Async / Await</h1>
+<h1 class="text-3xl font-bold text-accent my-4">Async / Await</h1>
 
 {#await promesa}
 	<p>... Cargando</p>
