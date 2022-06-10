@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	import { user, isLoggedIn } from '../stores/config';
 </script>
 
@@ -6,7 +6,7 @@
 
 {#if $isLoggedIn}
 	<p>Loggen In</p>
-	<img src={$user.photoURL} alt="">
-  <p>{$user.displayName}</p>
-  <p>{$user.email}</p>
+	<img src={$user.photoURL} alt="" />
+	<p>{$user.displayName}</p>
+	<p>{$user.email}</p>
 {/if}

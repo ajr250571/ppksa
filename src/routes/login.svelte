@@ -20,4 +20,4 @@
 
 <h1 class="my-4 text-5xl text-accent font-extrabold">Login</h1>
 
-<button class="btn btn-secondary" on:click={login}> Login with Google </button>
+<button class="btn btn-secondary" on:click={login}> Login con Google </button>

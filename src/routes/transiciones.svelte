@@ -1,8 +1,7 @@
 <script>
 	// https://www.youtube.com/watch?v=AjxFKYI7qrU&list=PLtEoLIi1AQhWzcCE76KQi4OLHqlDu_XUh&index=20
-	import { transition_in } from 'svelte/internal';
 
-	import { blur, fade, slide } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
 
 	let checked = true;
 </script>
@@ -22,5 +21,3 @@
 		Transition con Svelte
 	</h1>
 {/if}
-
-

@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { numero, hora } from '../stores/config';
-	
-
 </script>
 
 <svelte:head>

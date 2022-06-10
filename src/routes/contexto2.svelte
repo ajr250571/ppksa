@@ -1,7 +1,7 @@
 <script>
-  import { getContext } from "svelte/internal";
+	import { getContext } from 'svelte/internal';
 
-  let ciudad = getContext('ciudad');
+	let ciudad = getContext('ciudad');
 </script>
 
 <p>{ciudad}</p>

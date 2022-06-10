@@ -1,23 +1,27 @@
 <script>
 	let promesa = getPost();
 	async function getPost() {
-		const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-		if (response.status === 200) {
-			const resultado = await response.json();
-			return resultado;
+		const res = await fetch('http://localhost:4000/posts');
+		// https://jsonplaceholder.typicode.com/posts
+		// 'http://localhost:4000/posts'
+
+		if (res.status === 200) {
+			const result = await res.json();
+			return result;
 		} else {
 			throw new Error('Error en el request');
 		}
 	}
 </script>
 
-<h1 class="text-3xl font-bold text-accent my-4">Async / Await</h1>
+<h1 class="text-3xl font-bold textarea-succes my-4">Async / Await</h1>
 
 {#await promesa}
 	<p>... Cargando</p>
 {:then value}
 	{#each value as item}
-		<p>{item.title}</p>
+		<h1 class="text-2xl font-bold text-secondary mt-2">{item.title}</h1>
+		<p>{item.content}</p>
 	{/each}
 {:catch error}
 	<p>{error.message}</p>
